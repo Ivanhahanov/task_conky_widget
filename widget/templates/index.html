@@ -1,0 +1,10 @@
+<!doctype html>
+<title>Hello from Flask</title>
+<form method='POST'>
+{% for task in tasks %}
+	<p>{{task.number}} {{task.text}}</p> <input type='submit' name={{task.number}} value='delete'>
+{% endfor %}
+	<hr>
+	<p><input name="task"></p>
+   	<p><input type="submit" name="add" value="Добавить"></p>
+</form>
