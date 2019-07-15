@@ -2,7 +2,7 @@
 <title>Hello from Flask</title>
 <form method='POST'>
 {% for task in tasks %}
-	<p>{{task.number}} {{task.text}}</p> <input type='submit' name={{task.number}} value='delete'>
+	<p>{{task.task}}  <input type='submit' name={{task._id}} value='complete'></p>
 {% endfor %}
 	<hr>
 	<p><input name="task"></p>
